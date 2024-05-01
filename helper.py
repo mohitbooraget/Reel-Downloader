@@ -1,20 +1,20 @@
-import logging   #Bot Created by @NtrRazYt
-import subprocess   #Bot Created by @NtrRazYt
-import datetime   #Bot Created by @NtrRazYt
-import asyncio   #Bot Created by @NtrRazYt
+import logging   #Bot Created by @gujju
+import subprocess   #Bot Created by @gujju
+import datetime   #Bot Created by @gujju
+import asyncio   #Bot Created by @gujju
 import os   #Bot Created by @NtrRazYt
-import requests   #Bot Created by @NtrRazYt
-import time   #Bot Created by @NtrRazYt
-from p_bar import progress_bar   #Bot Created by @NtrRazYt
-import aiohttp   #Bot Created by @NtrRazYt
-import aiofiles   #Bot Created by @NtrRazYt
-import tgcrypto   #Bot Created by @NtrRazYt
-import concurrent.futures   #Bot Created by @NtrRazYt
-import subprocess   #Bot Created by @NtrRazYt
-from pyrogram.types import Message   #Bot Created by @NtrRazYt
-from pyrogram import Client, filters   #Bot Created by @NtrRazYt
+import requests   #Bot Created by @gujju
+import time   #Bot Created by @gujju
+from p_bar import progress_bar   #Bot Created by 
+import aiohttp   #Bot Created by @gujju
+import aiofiles   #Bot Created by 
+import tgcrypto   #Bot Created by 
+import concurrent.futures   #Bot Created by @gujju
+import subprocess   #Bot Created by @gujju
+from pyrogram.types import Message   #Bot Created by @gujju
+from pyrogram import Client, filters   #Bot Created by @gujju
    #Bot Created by @NtrRazYt
-def duration(filename):   #Bot Created by @NtrRazYt
+def duration(filename):   #Bot Created by @gujju
     result = subprocess.run(["ffprobe", "-v", "error", "-show_entries",   #Bot Created by @NtrRazYt
                              "format=duration", "-of",   #Bot Created by @NtrRazYt
                              "default=noprint_wrappers=1:nokey=1", filename],   #Bot Created by @NtrRazYt
@@ -198,10 +198,10 @@ async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):   #Bot 
         else:   #Bot Created by @NtrRazYt
             thumbnail = thumb   #Bot Created by @NtrRazYt
     except Exception as e:   #Bot Created by @NtrRazYt
-        await m.reply_text(str(e))   #Bot Created by @NtrRazYt
+        await m.reply_text(str(e))   #Bot Created by @gujju
    #Bot Created by @NtrRazYt
-    dur = int(duration(filename))   #Bot Created by @NtrRazYt
-   #Bot Created by @NtrRazYt
+    dur = int(duration(filename))   #Bot Created by @gujju
+   #Bot Created by @gujju
     start_time = time.time()   #Bot Created by @NtrRazYt
    #Bot Created by @NtrRazYt
     try:   #Bot Created by @NtrRazYt
